@@ -42,7 +42,7 @@ with open('time_name.txt', 'r') as f:
         ##因为需要两行时间进行对比求差，首行不进行比较
         if i > 1:
             ##求增量 -t 参数需要 
-            diff_time = (d_date_time - d_old_date_time).seconds
+            diff_time = (d_date_time - d_old_date_time).seconds - 1
             
             if diff_time == 0:
                 ##时间没有差值：已经读取到最后一行
